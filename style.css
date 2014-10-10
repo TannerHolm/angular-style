@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin);
 @import url(http://fonts.googleapis.com/css?family=Rubik+Mono+One);
-
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
 html,body{
 	height:100%;
 	width: 100%;
@@ -76,6 +76,146 @@ display: inline-block;
 	transform: translateX(0px);
 }
 
+/*
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+CL EFFECT 2
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+
+
+
+
+.cl-effect-b a::before,
+.cl-effect-b a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-b a::before {
+	margin-right: 10px;
+	content: '{';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.cl-effect-b a::after {
+	margin-left: 10px;
+	content: '}';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.cl-effect-b a:hover::before,
+.cl-effect-b a:hover::after,
+.cl-effect-b a:focus::before,
+.cl-effect-b a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+
+
+/*
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+CL EFFECT 2
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+
+
+
+
+.cl-effect-c a::before,
+.cl-effect-c a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-c a::before {
+	margin-right: 10px;
+	content: '(';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.cl-effect-c a::after {
+	margin-left: 10px;
+	content: ')';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.cl-effect-c a:hover::before,
+.cl-effect-c a:hover::after,
+.cl-effect-c a:focus::before,
+.cl-effect-c a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+
+
+
+/*
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+CL EFFECT 2
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+
+
+
+
+.cl-effect-d a::before,
+.cl-effect-d a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-d a::before {
+	margin-right: 10px;
+	content: '...';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.cl-effect-d a::after {
+	margin-left: 10px;
+	content: '...';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.cl-effect-d a:hover::before,
+.cl-effect-d a:hover::after,
+.cl-effect-d a:focus::before,
+.cl-effect-d a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
 
 /*
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -123,4 +263,175 @@ VIEW TRANSITIONS
 
 .at-view-fade-out.ng-leave-active {
     opacity: 0;
+}
+
+.img-responsive{
+	height: 85%;
+	width: 85%;
+	margin: 10px;
+}
+
+.content h1{
+}
+
+.content h1:hover~.hide-menu{
+	display: block;
+	opacity: 1;
+
+}
+
+.hide-menu:hover{
+	opacity: 1;
+	display: block;
+
+}
+.hide-menu{
+/*display: none;*/
+	transition:opacity .2s ease-out, background 2s ease-in;
+    opacity: 0;
+    width: 100%;
+height: 500px;
+position: absolute;
+top: 85px;
+}
+
+.hide-menu h3{
+	display: inline-block;
+	margin-top: 100px;
+}
+
+.frame h3 a{
+color: #373a47;
+font-size: 30px;
+text-decoration: none;
+	
+}
+.content h1 a{
+color: #373a47;
+font-size: 75px;
+text-decoration: none;
+
+}
+
+
+
+
+/*
+///////////////////////////
+
+FORM
+
+////////////////////////////
+*/
+
+
+/* Basic Grey */
+.basic-grey {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    /*background: #F7F7F7;*/
+    padding: 25px 15px 25px 10px;
+    /*font: 12px Georg`ia, "Times New Roman", Times, serif;*/
+    color: #373a47;
+    text-shadow: 1px 1px 1px #FFF;
+    /*border:1px solid #E4E4E4;*/
+}
+.basic-grey h1 {
+    font-size: 50px;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    /*border-bottom:1px solid #E4E4E4;*/
+    margin: -10px -15px 30px -10px;;
+    color: #373a47;
+}
+.basic-grey h1>span {
+    display: block;
+    font-size: 11px;
+}
+.basic-grey label {
+    display: block;
+    margin: 0px;
+}
+.basic-grey label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: #373a47;
+}
+.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey textarea, .basic-grey select {
+    border: 1px solid #DADADA;
+    color: #373a47;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;
+    font-size: 12px;
+    line-height:15px;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+.basic-grey textarea{
+    padding: 5px 3px 3px 5px;
+}
+.basic-grey select {
+    background: #FFF url('down-arrow.png') no-repeat right;
+    background: #FFF url('down-arrow.png') no-repeat right);
+    appearance:none;
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+    line-height: 25px;
+}
+.basic-grey textarea{
+    height:100px;
+}
+.basic-grey .button {
+    background: #E27575;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+}
+.basic-grey .button:hover {
+    background: #CF7A7A
+}
+
+/*
+////////////////////////
+LETTER STYLES
+
+////////////////////
+*/
+
+
+.contact-frame	{
+	background: url(img/parchment-md.jpg) center center no-repeat;
+	/*margin: 20px;*/
+	height: 100%;
+	width: 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: absolute;
+/*top: 100px;*/
+/*left: 100px;*/
+	/*margin: 15% auto;*/
+width: 100%;
+text-align: center;
+}
+
+.letter{
+	font-family: 'Great Vibes', cursive;
 }

@@ -14,6 +14,13 @@ app.config(function($routeProvider) {
         controller: "AppCtrl"
       }
     )
+    .when('/contact',
+      {
+        templateUrl: "views/contact.html",
+        controller: "AppCtrl"
+      }
+    )
+
 
 });
 
