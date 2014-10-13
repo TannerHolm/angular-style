@@ -20,6 +20,12 @@ app.config(function($routeProvider) {
         controller: "AppCtrl"
       }
     )
+    .when('/about',
+      {
+        templateUrl: "views/about.html",
+        controller: "AppCtrl"
+      }
+    )
 
 
 });
