@@ -1,0 +1,75 @@
+<div class="contact-frame">
+	
+<div class="row">
+	<div class="col-md-4 form">
+		<form action="contact-form-submission.php" method="post" class="basic-grey">
+    <h1>Pick One.
+    </h1>
+        <a class="parchment-trigger" href=""><h4>Owl</h4></a>
+        <!-- <h4>Pony Express</h4> -->
+        <a class="typewriter-trigger" href=""><h4>Telegram</h4></a>
+    <label>
+        <span></span>
+        <textarea  ng-model="data.message" id="message" name="contact_message" placeholder="Your Message to Us"></textarea>
+    </label> 
+     <label>
+    
+    <label>
+        <span></span>
+        <input  ng-model="data.email" id="email" type="email" name="contact_email" placeholder="Valid Email Address" />
+    </label>
+       
+    <label>
+        <span></span>
+        <input  ng-model="data.name" id="name" type="text" name="contact_name" placeholder="Your Full Name" />
+    </label>
+     <label>
+	                <input type="hidden" name="save" value="contact">
+	                <button type="submit" class="btn btn-primary">Submit</button>
+    </label>    
+</form>
+
+	</div>
+	<div class="col-md-5">
+		<div class="letter default">
+			<div class="letter-body">
+				
+			<h1>Honored Sir,</h1>
+	<h2><strong>{{data.message}}</strong></h2>
+	<br>
+	<!-- <h2>If you wish to contact me, here is the electronic address with which to send me a reply</h2> -->
+	<br>
+	<h1><strong>{{data.email}}</strong></h1>
+
+	<h3>Respond with haste,</h3>
+	<h1><strong>{{data.name}}</strong></h1>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<script>
+	$(function() {                       //run when the DOM is ready
+  $(".parchment-trigger").click(function() {  //use a class, since your ID gets mangled
+    $(".letter").addClass("parchment");
+    $(".letter").removeClass("typewriter");
+    $(".letter").removeClass("default");
+
+          //add the class to the clicked element
+  });
+  $(".typewriter-trigger").click(function() {  //use a class, since your ID gets mangled
+    $(".letter").addClass("typewriter");      //add the class to the clicked element
+    $(".letter").removeClass("default");      //add the class to the clicked element
+});
+});
+</script>
+<!-- 
+
+		<label for="text">Name</label>
+		<input type="text" ng-model="data.message">
+		<label for="text">email</label>
+		<input type="text" ng-model="data.message">
+		<label for="text">Budget</label>
+		<input type="text" ng-model="data.message">
+		<label for="text">Message</label>
+		<textarea type="text" ng-model="data.message"></textarea> -->

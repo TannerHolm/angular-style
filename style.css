@@ -9,7 +9,7 @@ html,body{
 .content-wrap{
 	height:100%;
 	width: 100%;
-	background: #eee;
+	background: #333333;
 	overflow: hidden;
 }
 
@@ -21,17 +21,29 @@ position: absolute;
 width: 100%;
 text-align: center;
 z-index: 100;
+}
+
+.welcome-frame{
+	width: 100%;
+	height: 100%;
+	background: url(img/train-repeat.gif) center center no-repeat;
+-webkit-background-size: cover;
+background-size: cover;
+z-index: 999;
+position: absolute;
+right: 0;
+bottom:0;
 
 }
 
-video#bgvid {
+/*video#bgvid {
 position: fixed; right: 0; bottom: 0;
 min-width: 100%; min-height: 100%;
 width: auto; height: auto; z-index: -100;
 background: url(polina.jpg) no-repeat;
 background-size: cover;
 }
-
+*/
 .content{
 height: 100%;
 width: 100%;
@@ -347,7 +359,7 @@ FORM
     padding: 50px 0px 50px 10px;
     /*font: 12px Georg`ia, "Times New Roman", Times, serif;*/
     color: #373a47;
-    text-shadow: 1px 1px 1px #FFF;
+    /*text-shadow: 1px 1px 1px #FFF;*/
     /*border:1px solid #E4E4E4;*/
 }
 .basic-grey h1 {
@@ -356,7 +368,8 @@ FORM
     display: block;
     /*border-bottom:1px solid #E4E4E4;*/
     margin: -10px -15px 0px -10px;
-    color: #373a47;
+    /*color: #373a47;*/
+    color: #fff;
 }
 
 .basic-grey h4 {
@@ -365,7 +378,8 @@ FORM
     display: block;
     /*border-bottom:1px solid #E4E4E4;*/
     /*margin: -10px -15px 0px -10px;*/
-    color: #373a47;
+    /*color: #373a47;*/
+    color: #fff;
 }
 
 
@@ -448,6 +462,9 @@ LETTER STYLES
 	text-align: center;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	background: url(img/desk.jpg) center center fixed no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 
 }
 
@@ -463,22 +480,50 @@ background: url(img/typewriter.jpg) center center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	font-family: 'Special Elite', cursive;
+	z-index: 1;
 
+}
+
+.default{
+
+	background: #fff;
 }
 
 .letter{
 	height: 600px;
 	margin-right: 10px;
 	border: 20px groove #e3e3e3;
+	/*z-index: -1;*/
 }
 
 .letter-body{
 	width: 400px;
 	margin: auto;
+
+
 }
-.letter h1{
-	padding-top: 10px;
+.letter h1:first-child{
+	padding-top: 100px;
 }
 .no-js{
 	overflow: hidden;
+}
+
+.about-frame{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background: url(img/tanner.jpg) center center fixed no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+
+@media (max-width: 600px){
+	h1{
+		font-size: 10px;
+	}
 }

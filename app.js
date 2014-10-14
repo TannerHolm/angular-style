@@ -16,7 +16,7 @@ app.config(function($routeProvider) {
     )
     .when('/contact',
       {
-        templateUrl: "views/contact.html",
+        templateUrl: "contact.html",
         controller: "AppCtrl"
       }
     )
